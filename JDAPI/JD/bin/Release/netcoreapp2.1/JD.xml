@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JD</name>
+    </assembly>
+    <members>
+        <member name="T:JD.Autofac.CustomAutofacModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:JD.Autofac.CustomAutofacModule.Load(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:JD.Controllers.CategoryController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:JD.Controllers.LoginController">
+            <summary>
+            用户登录
+            </summary>
+        </member>
+        <member name="M:JD.Controllers.LoginController.Login(JD.Model.ReceiveModel.UserModel)">
+            <summary>
+            用户登陆
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="T:JD.Controllers.TestController">
+            <summary>
+            首页管理
+            </summary>
+        </member>
+        <member name="M:JD.Controllers.TestController.Index">
+            <summary>
+            测试接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:JD.ErrorException.CustomErrorException">
+            <summary>
+            服务端错误
+            </summary>
+        </member>
+        <member name="M:JD.ErrorException.CustomErrorException.#ctor(JD.ErrorException.ProtocolError,System.String)">
+            <summary>
+            构服务端错误
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.CustomErrorException.Code">
+            <summary>
+            错误码
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.CustomErrorException.Description">
+            <summary>
+            错误描述
+            </summary>
+        </member>
+        <member name="M:JD.ErrorException.CustomErrorException.Create(JD.ErrorException.ProtocolError)">
+            <summary>
+            创建服务端错误
+            </summary>
+        </member>
+        <member name="M:JD.ErrorException.CustomErrorException.Create(JD.ErrorException.ProtocolError,System.String)">
+            <summary>
+            创建服务端错误
+            </summary>
+        </member>
+        <member name="P:JD.ErrorException.JsonErrorResponse.Code">
+            <summary>
+            错误码
+            </summary>
+        </member>
+        <member name="P:JD.ErrorException.JsonErrorResponse.Message">
+            <summary>
+            生产环境的消息
+            </summary>
+        </member>
+        <member name="P:JD.ErrorException.JsonErrorResponse.DevelopmentMessage">
+            <summary>
+            开发环境的消息
+            </summary>
+        </member>
+        <member name="T:JD.ErrorException.ProtocolConst">
+            <summary>
+            协议常数定义
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolConst.CurrentVersion">
+            <summary>
+            协议当前版本 v2
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolConst.HttpCode_CustomError">
+            <summary>
+            协议错误返回的Httpcode
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolConst.SESSION_COOKIE_NAME">
+            <summary>
+            客户端提交session的cookie名称
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolConst.SESSION_HEADER_NAME">
+            <summary>
+            客户端提交Session的自定义头名称
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolConst.ERROR_HEADER_NAME">
+            <summary>
+            服务端返回错误代码的header名称
+            </summary>
+        </member>
+        <member name="T:JD.ErrorException.ProtocolError">
+            <summary>
+            协议错误码定义
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.Common">
+            <summary>
+            一般错误，详细错误信息参看具体错误提示
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.NotPermit">
+            <summary>
+            没有权限
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.NotExists">
+            <summary>
+            数据不存在:1002
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.SessionNotExists">
+            <summary>
+            会话不存在
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.NotLogin">
+            <summary>
+            用户尚未登录
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.SmsTimeLimit">
+            <summary>
+            频繁发送手机短信
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.ParamIsEmpty">
+            <summary>
+            参数为空
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.InvalidClient">
+            <summary>
+            非法的客户端
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.ObsoleteProtocolVer">
+            <summary>
+            客户端协议版本不支持
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.ObsoleteClientVer">
+            <summary>
+            客户端版本号不支持
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.DisabledNewClient">
+            <summary>
+            服务端禁止新的登录会话
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.LoginFailed">
+            <summary>
+            用户名或者密码错误
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.SessionKickedOut">
+            <summary>
+            会话被踢出
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.UserDisabled">
+            <summary>
+            用户被禁用
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.PlatError">
+            <summary>
+            平台错误
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.InvalidPhoneNumber">
+            <summary>
+            手机号不合法或者不受支持
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.PhoneNumberExists">
+            <summary>
+            手机号已被其他用户注册
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.NotGetVerifyCode">
+            <summary>
+            尚未获取验证码
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.LoginNameExists">
+            <summary>
+            用户名重复
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.InvalidVerifyCode">
+            <summary>
+            手机验证码错误或者无效
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.PasswordIsEmpty">
+            <summary>
+            密码不能为空
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.LoginNameNotExists">
+            <summary>
+            账号不存在
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.TeacherLoginNameNotExists">
+            <summary>
+            该账号未在教师端注册
+            </summary>
+        </member>
+        <member name="F:JD.ErrorException.ProtocolError.NonSupportAuth">
+            <summary>
+            该功能属于VIP
+            </summary>
+        </member>
+        <member name="T:JD.ErrorException.UserOperationException">
+            <summary>
+            操作日志
+            </summary>
+        </member>
+        <member name="T:JD.log4net.InitRepository">
+            <summary>
+            .Net Core 中需要指定Repository
+            </summary>
+        </member>
+        <member name="T:JD.log4net.LogHelper">
+            <summary>
+            用来记录log的日志格式以及数据分类存放
+            </summary>
+        </member>
+        <member name="M:JD.log4net.LogHelper.ErrorLog(System.String,System.Exception)">
+            <summary>
+            全局异常错误记录持久化
+            </summary>
+            <param name="throwMsg"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="M:JD.log4net.LogHelper.WriteLog(System.String,System.Exception)">
+            <summary>
+            自定义操作记录，与仓储中的增删改的日志是记录同一张表
+            </summary>
+            <param name="throwMsg"></param>
+            <param name="ex"></param>
+        </member>
+        <member name="P:JD.Startup.repository">
+            <summary>
+            log4net  https://blog.csdn.net/qq_42606051/article/details/82385279
+            </summary>
+        </member>
+    </members>
+</doc>
