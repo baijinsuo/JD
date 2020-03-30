@@ -6,5 +6,4 @@
 ## 所用技术：
 前端：uex、router、webpack、axios、vue-lazyload
 
-后端：
-C#、.Net core、WebApi、Autofac 依赖注入、日志log4.net、swagger 接口文档、SQL Server、SqlSugarORM框架
+后端：C#、.Net core、WebApi、Autofac 依赖注入、日志log4.net、swagger 接口文档、SQL Server、SqlSugarORM框架
